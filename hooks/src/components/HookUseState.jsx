@@ -13,6 +13,9 @@ const HookUseState = () => {
 
         setName ("Michel Lopes")
     }
+
+    //2 input
+    const [age, setAge] = useState(18)
   return (
     <div>
       {/* 1 - useState*/}
@@ -20,6 +23,14 @@ const HookUseState = () => {
       <p>Variável: {userName}</p>
       <p>useState: {name}</p>
       <button onClick={changeNames}>Mudar nomes</button>
+      {/*2 INPUT*/}
+      <form>
+        <input
+          type='text'
+          value={age}
+          onChange={(e) => setAge(e.target.value)}
+        />
+      </form>
       <hr />
     </div>
   );
