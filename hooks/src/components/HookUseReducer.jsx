@@ -14,7 +14,7 @@ const HookUseReducer = () => {
     switch (action.type) {
       case "ADD":
         const newTask = {
-          id: Math.random(), // corrigido aqui
+          id: Math.random(), 
           text: taskText,
         };
 
